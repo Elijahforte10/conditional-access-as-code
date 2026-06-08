@@ -1,0 +1,21 @@
+{
+  "displayName": "Block Legacy Authentication",
+  "state": "enabledForReportingButNotEnforced",
+  "conditions": {
+    "clientAppTypes": [
+      "exchangeActiveSync",
+      "other"
+    ],
+    "users": {
+      "includeUsers": ["All"],
+      "excludeUsers": ["REPLACE_WITH_BREAKGLASS_ACCOUNT_OBJECT_ID"]
+    },
+    "applications": {
+      "includeApplications": ["All"]
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": ["block"]
+  }
+}
